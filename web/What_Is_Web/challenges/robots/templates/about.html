@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Cat Cafe About Us</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div>
+      <a href="{{ url_for('home') }}">Homepage</a>
+    </div>
+    <div>
+      <a href="{{ url_for('listing') }}">Cat Listing</a>
+    </div>
+    <div>
+      <a href="{{ url_for('about') }}">About Us</a>
+    </div>
+    <div>
+      <a href="{{ url_for('login') }}">Client Login</a>
+    </div>
+  </nav>
+  <h1>About Us:</h1> 
+  <div class="flexbox">
+    <p>We're like, the best cat cafe people ever?!?!?!!! Come join us whenever and like pet cats and stuff then adopt them!!!!!!!!!!!!!!</p>
+    <img class="flexbox-item" src="/static/images/team.png" alt="The Team">
+    <p class="flexbox-item">The RPISEC Cat Cafe Team ofc</p>
+  </div>
+</body>
+</html>

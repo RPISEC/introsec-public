@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Cat Cafe Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div>
+      <a href="{{ url_for('home') }}">Homepage</a>
+    </div>
+    <div>
+      <a href="{{ url_for('listing') }}">Cat Listing</a>
+    </div>
+    <div>
+      <a href="{{ url_for('about') }}">About Us</a>
+    </div>
+    <div>
+      <a href="{{ url_for('login') }}">Client Login</a>
+    </div>
+  </nav>
+  <div id="content">
+    <h1>Admin Login:</h1> 
+    We've momentarily changed the website so that only admins can access the login portal, we've found some bugs and are doing some maintenance. Hope to see you soon!
+    <div id="error">{{error}}</div>
+    <form method="POST" action="{{url_for('login')}}">
+      <fieldset>
+        <div>
+          <label>Username</label>
+          <div>
+            <input type="text" name="user" id="name" placeholder="Username">
+          </div>
+        </div>
+        <div>
+          <label>Password</label>
+          <div>
+            <input type="password" name="pass" id="pass" placeholder="Password">
+          </div>
+        </div>
+        <button name="form" type="submit">Login</button>
+      </fieldset>
+    </form>
+  </div>
+  <div class="flexbox">
+    <img class="flexbox-item" src="/static/images/cat_lying_down.avif" alt="Adorable cat">
+    <p class="flexbox-item">Log in or this cat (Bob) will SMITE you</p>
+  </div>
+</body>
+</html>

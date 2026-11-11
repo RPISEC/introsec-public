@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /evil_backend_page_for_the_hackers_where_we_store_our_data
